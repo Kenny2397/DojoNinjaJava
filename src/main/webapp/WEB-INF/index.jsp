@@ -12,7 +12,18 @@
 <body>
 
 	<div class="container">
+		<h1>NEW DOJO</h1>
 		
+		<form:form action="/dojo/create" method="POST" modelAttribute="dojo" >
+		
+			<div class="form-group">
+				<form:label path="name">Name:</form:label>
+				<form:input path="name" class="form-control"/>
+				<form:errors path="name" class="text-danger"/>				
+			</div>
+			<input type="submit" value="Create" class="btn btn-primary">
+			
+		</form:form>
 	</div>
 
 </body>
